@@ -4,10 +4,11 @@
 
 ## Team
 
-  - teamMember
-  - teamMember
-  - teamMember
-  - teamMember
+  - Jackson Christoffersen
+  - Brandon Hadler
+  - Jinxuan Lin
+  - Sean Gurson
+  - Test
 
 ## Table of Contents
 
