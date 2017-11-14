@@ -26,4 +26,7 @@
 - When I post a job, I want to specify the price I will pay and job requirements
 - When I am posting a job, I expect to be able to see local doers 
 - When my job is completed, I expect to be able to review the doer and receive a rating from them
+- When I post a job, I expect to be able to choose my doer
+- When I post my job, I expect to post it to a certain category
+
 
