@@ -1,6 +1,7 @@
 {
-  "name": "",
+  "name": "LocalList",
   "version": "",
+  "main": "server/app.js",
   "description": "",
   "author": "",
   "license": "",
@@ -8,8 +9,10 @@
     "node": ">=6.4.0"
   },
   "scripts": {
+    "start": "node server/app.js"
   },
   "dependencies": {
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
