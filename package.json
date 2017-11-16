@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node server/app.js",
     "react-dev": "webpack -d --watch",
-    "postinstall": "webpack -p"
+    "heroku-postbuild": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
