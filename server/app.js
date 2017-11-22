@@ -60,7 +60,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(router);
+app.use('/api', router);
+
+app.all('/*', (req, res) => {
+  res.sendFile('/index.html', {root: './client'});
+})
 
 let port = process.env.PORT || 3000;
 
