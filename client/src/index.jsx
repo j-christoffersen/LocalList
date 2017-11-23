@@ -52,7 +52,7 @@ class App extends React.Component {
   }
 
   login({ username, password }) {
-    return axios.post('/login', { username, password })
+    return axios.post('/api/login', { username, password })
     .then(res => {
       this.setState({
         user: res.data
@@ -72,11 +72,11 @@ class App extends React.Component {
     this.setState({
       user: null
     })
-    return axios.get('/logout');
+    return axios.get('/api/logout');
   }
 
   signup({ username, password }) {
-    return axios.post('/signup', { username, password })
+    return axios.post('/api/signup', { username, password })
     .then(res => {
       this.setState({
         user: res.data

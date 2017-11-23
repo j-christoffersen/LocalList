@@ -5,6 +5,13 @@ const passport = require('passport');
 const controllers = require('./controllers');
 const JsonHeaders = { 'Content-Type': 'application/json' };
 
+//test, to remove
+router.route('/test')
+.get((req, res) => {
+  res.writeHead(200);
+  res.end('hey');
+})
+
 router.route('/login')
 .post(passport.authenticate('local'), (req, res) => {
   let {id, username} = req.user.dataValues;
@@ -17,7 +24,7 @@ router.route('/signup')
   controllers.user.post(req, res);
 })
 
-router.route('/api/auth')
+router.route('/auth')
 .get((req, res) => {
   let user;
   if (req.user) {
@@ -32,10 +39,12 @@ router.route('/api/auth')
 
 //Only signed in users
 router.use((req, res, next) => {
+  console.log('AUTHENTICATING...');
   if (req.user) {
     next();
   } else {
-    res.redirect('/login');
+    res.writeHead(401);
+    res.end();
   }
 })
 
@@ -46,6 +55,8 @@ router.route('/logout')
   res.end();
 })
 
+
+//test, to remove
 router.route('/members')
 .get((req, res) => {
 	res.writeHead(200);
