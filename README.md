@@ -1,6 +1,6 @@
-# Project Name
+# LocalList
 
-> Pithy project description
+An app to help match odd job seekers and providers based on geographic location
 
 ## Team
 
@@ -11,17 +11,12 @@
 
 ## Table of Contents
 
-1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
+    1. [Style Guide](#style-guide)
 1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
-
-## Usage
-
-> Some usage instructions
 
 ## Requirements
 
@@ -40,7 +35,8 @@ npm install
 bower install
 ```
 
-### Airbnb style guide with ESLint
+### Style Guide
+This repo uses the Airbnb style guide
 #### Sublime:
 Using Package Control:
 - Install SublimeLinter
